@@ -121,7 +121,7 @@ return packer.startup(function(use)
 	use({ "stevearc/dressing.nvim" })
 
 	-- discord presence
-	use({ "andweeb/presence.nvim" })
+	-- use({ "andweeb/presence.nvim" })
 
 	-- auto closing buffers
 	use({ "axkirillov/hbac.nvim" })
