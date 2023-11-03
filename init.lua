@@ -23,6 +23,7 @@ require("dkoczka.plugins.indent")
 require("dkoczka.plugins.tint")
 require("dkoczka.plugins.minimap")
 require("dkoczka.plugins.matchup")
--- require("dkoczka.plugins.bufferline")
+require("dkoczka.plugins.tailwind-sort")
+-- require("dkoczka.plugins.scrolling")
 
 require("dkoczka.core.colorscheme")

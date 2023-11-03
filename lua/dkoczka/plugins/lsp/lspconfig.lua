@@ -45,6 +45,9 @@ local on_attach = function(client, bufnr)
 	end
 end
 
+-- augroup variable for TSX auto import
+local augroup = vim.api.nvim_create_augroup("TypescriptAutoImport", {})
+
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
@@ -70,6 +73,8 @@ lspconfig.angularls.setup({
 	end,
 })
 
+lspconfig.tsserver.setup({})
+
 -- configure html server
 lspconfig["html"].setup({
 	capabilities = capabilities,
@@ -79,8 +84,8 @@ lspconfig["html"].setup({
 -- configure typescript server with plugin
 typescript.setup({
 	server = {
-		capabilities = capabilities,
 		on_attach = on_attach,
+		capabilities = capabilities,
 		init_options = {
 			preferences = {
 				disableSuggestions = true,

@@ -15,4 +15,7 @@ lspsaga.setup({
 	definition_action_keys = {
 		edit = "<CR>",
 	},
+	server_filetype_map = {
+		typescript = "typescript",
+	},
 })

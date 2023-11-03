@@ -139,6 +139,16 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- tailwind class sorting
+	use({
+		"laytan/tailwind-sorter.nvim",
+		requires = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
+		run = "cd formatter && npm i && npm run build",
+	})
+
+	-- notifications plugin
+	use({ "rcarriga/nvim-notify" })
+
 	-- indent lines
 	use({ "lukas-reineke/indent-blankline.nvim" })
 
@@ -147,6 +157,9 @@ return packer.startup(function(use)
 
 	-- dim inactive splits
 	use({ "levouh/tint.nvim" })
+
+	-- smooth scrollin
+	use({ "karb94/neoscroll.nvim" })
 
 	if packer_bootstrap then
 		require("packer").sync()

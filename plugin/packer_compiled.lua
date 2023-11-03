@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/Users/dkoczka/.local/share/nvim/site/pack/packer/start/mini.map",
     url = "https://github.com/echasnovski/mini.map"
   },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/Users/dkoczka/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
+  },
   ["ng.nvim"] = {
     loaded = true,
     path = "/Users/dkoczka/.local/share/nvim/site/pack/packer/start/ng.nvim",
@@ -223,6 +228,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dkoczka/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/Users/dkoczka/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-transparent"] = {
     loaded = true,
@@ -260,6 +270,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dkoczka/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["tailwind-sorter.nvim"] = {
+    loaded = true,
+    path = "/Users/dkoczka/.local/share/nvim/site/pack/packer/start/tailwind-sorter.nvim",
+    url = "https://github.com/laytan/tailwind-sorter.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,

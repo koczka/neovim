@@ -40,6 +40,8 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 -- horizontal navigation
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "{", "}zz")
+keymap.set("n", "}", "{zz")
 
 ----------------------
 -- Plugin Keybinds

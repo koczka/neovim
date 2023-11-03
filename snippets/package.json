@@ -22,10 +22,8 @@
   ],
   "keywords": [
     "Angular",
-    "TypeScript",
-    "HTML",
-    "Angular Material",
-    "Angular 7"
+    "React",
+    "Ionic"
   ],
   "contributes": {
     "snippets": [
@@ -52,6 +50,14 @@
       {
         "language": "typescript",
         "path": "./ionic/typescript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./react/typescript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./react/typescript.json"
       }
     ]
   },
