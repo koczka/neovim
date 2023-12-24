@@ -1,14 +1,15 @@
 -- import comment plugin safely
 local setup, catppuccin = pcall(require, "catppuccin")
 if not setup then
+	print("catppuccin not found")
 	return
 end
 
 catppuccin.setup({
-	-- flavour = "latte",
-	flavour = "frappe",
-	-- flavour = "macchiato",
-	-- flavour = "mocha",
+	background = { -- :h background
+		light = "latte",
+		dark = "mocha",
+	},
 	transparent_background = true,
 	integrations = {
 		cmp = true,
@@ -20,3 +21,6 @@ catppuccin.setup({
 		treesitter = true,
 	},
 })
+
+-- setup must be called before loading
+vim.cmd.colorscheme("catppuccin")

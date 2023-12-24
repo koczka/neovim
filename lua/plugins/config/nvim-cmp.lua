@@ -16,10 +16,6 @@ if not lspkind_status then
 	return
 end
 
--- load vs-code like snippets from plugins (e.g. friendly-snippets)
--- require("luasnip/loaders/from_vscode").lazy_load()
--- require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/plugins/snippets/angular" } })
-
 local snippet_path = os.getenv("HOME") .. "/.config/nvim/snippets/"
 if not vim.tbl_contains(vim.opt.rtp:get(), snippet_path) then
 	vim.opt.rtp:append(snippet_path)
