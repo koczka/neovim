@@ -66,3 +66,5 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 
 -- lazygit keybind
 keymap.set("n", "<C-g>", ":LazyGit<CR>")
+
+vim.opt.mouse = nil
