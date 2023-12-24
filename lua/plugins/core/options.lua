@@ -42,4 +42,4 @@ opt.iskeyword:append("-")
 opt.autowrite = true
 
 -- disable mouse support
--- vim.opt.mouse = nil
+vim.opt.mouse = nil

@@ -17,26 +17,12 @@ return {
 
 	-- fuzzy finding w/ telescope
 	{ "nvim-telescope/telescope.nvim", dependencies = "tsakirist/telescope-lazy.nvim" },
-
-	-- window separator borders
-	{
-		"nvim-zh/colorful-winsep.nvim",
-		config = true,
-		event = { "WinNew" },
-	},
-
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
-		opts = {
-			-- add any options here
-		},
+		opts = {},
 		dependencies = {
-			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
 			"MunifTanjim/nui.nvim",
-			-- OPTIONAL:
-			--   `nvim-notify` is only needed, if you want to use the notification view.
-			--   If not available, we use `mini` as the fallback
 			"rcarriga/nvim-notify",
 		},
 	},
@@ -49,7 +35,7 @@ return {
 	-- snippets
 	"L3MON4D3/LuaSnip", -- snippet engine
 	"saadparwaiz1/cmp_luasnip", -- for autocompletion
-	"rafamadriz/friendly-snippets", -- useful snippets
+	-- "rafamadriz/friendly-snippets", -- useful snippets
 
 	-- managing & installing lsp servers, linters & formatters
 	"williamboman/mason.nvim", -- in charge of managing lsp servers, linters & formatters
@@ -65,26 +51,15 @@ return {
 	-- formatting & linting
 	"jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
 	"jayp0521/mason-null-ls.nvim", -- bridges gap b/w mason & null-ls
-
-	-- treesitter configuration
 	"nvim-treesitter/nvim-treesitter",
 
-	-- auto closing
 	"windwp/nvim-autopairs", -- autoclose parens, brackets, quotes, etc...
 	{ "windwp/nvim-ts-autotag", dependencies = "nvim-treesitter" }, -- autoclose tags
-
-	-- git integration
 	"lewis6991/gitsigns.nvim", -- show line modifications on left hand side
-	"f-person/git-blame.nvim",
-
-	-- open document on last edited position
-	"ethanholz/nvim-lastplace",
-
-	-- background transparency
-	"xiyaowong/nvim-transparent",
-
-	-- angular service
-	"joeveiga/ng.nvim",
+	"f-person/git-blame.nvim", -- git blame information
+	"ethanholz/nvim-lastplace", -- open document on last edited position
+	"xiyaowong/nvim-transparent", -- background transparency
+	"joeveiga/ng.nvim", -- angular service
 
 	-- discord presence
 	-- "andweeb/presence.nvim",

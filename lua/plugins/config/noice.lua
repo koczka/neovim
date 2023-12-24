@@ -28,7 +28,7 @@ if not notify_status then
 end
 
 notify.setup({
-	fps = 60,
+	fps = 120,
 	level = 2,
 	top_down = true,
 	timeout = 1000,
