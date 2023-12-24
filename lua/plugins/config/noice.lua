@@ -29,7 +29,7 @@ end
 
 notify.setup({
 	fps = 120,
-	level = 2,
+	level = 3,
 	top_down = true,
 	timeout = 1000,
 	background_colour = "#FFFFFF",

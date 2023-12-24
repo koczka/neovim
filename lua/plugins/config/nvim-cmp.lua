@@ -62,4 +62,14 @@ cmp.setup({
 			ellipsis_char = "...",
 		}),
 	},
+	window = {
+		completion = { -- rounded border; thin-style scrollbar
+			border = "rounded",
+			scrollbar = "║",
+		},
+		documentation = { -- rounded border; thin-style scrollbar
+			border = "rounded",
+			scrollbar = "║",
+		},
+	},
 })
