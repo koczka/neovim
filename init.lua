@@ -4,6 +4,7 @@ require("plugins.core.lazy")
 -- core options
 require("plugins.core.options")
 require("plugins.core.keymaps")
+require("plugins.core.wezterm")
 
 -- plugins
 require("plugins.config.colorizer")

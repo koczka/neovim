@@ -73,7 +73,9 @@ lspconfig.angularls.setup({
 	end,
 })
 
-lspconfig.tsserver.setup({})
+lspconfig.tsserver.setup({
+	root_dir = require("lspconfig.util").root_pattern(".git"),
+})
 
 -- configure html server
 lspconfig["html"].setup({
